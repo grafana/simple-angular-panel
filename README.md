@@ -1,2 +1,3 @@
-# simple-angular-panel
-Hello world angular panel
+## Simple Angular Panel
+
+Hello world showing series in grafana panel
