@@ -14,8 +14,8 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@grafana/data": "latest",
-    "@grafana/toolkit": "next",
     "@grafana/ui": "latest",
+    "@grafana/toolkit": "next",
     "@types/grafana": "github:CorpGlory/types-grafana.git"
   }
 }
