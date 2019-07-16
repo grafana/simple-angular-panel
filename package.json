@@ -8,8 +8,6 @@
     "dev": "grafana-toolkit plugin:dev",
     "watch": "grafana-toolkit plugin:dev --watch"
   },
-  "author": "ryantxu",
-  "license": "MIT",
   "author": "Grafana Labs",
   "license": "Apache-2.0",
   "devDependencies": {

@@ -4,7 +4,7 @@ import defaultsDeep from 'lodash/defaultsDeep';
 import { DataFrame } from '@grafana/data';
 
 interface KeyValue {
-  key:string;
+  key: string;
   value: any;
 }
 
@@ -18,7 +18,6 @@ export default class SimpleCtrl extends MetricsPanelCtrl {
   // Simple example showing the last value of all data
   firstValues: KeyValue[] = [];
 
-
   /** @ngInject */
   constructor($scope, $injector) {
     super($scope, $injector);
@@ -26,7 +25,6 @@ export default class SimpleCtrl extends MetricsPanelCtrl {
 
     // Get results directly as DataFrames
     (this as any).dataFormat = 'series';
-
 
     this.events.on('init-edit-mode', this.onInitEditMode.bind(this));
     this.events.on('render', this.onRender.bind(this));
@@ -46,7 +44,7 @@ export default class SimpleCtrl extends MetricsPanelCtrl {
     this.renderingCompleted();
   }
 
-  onDataError(err:any) {
+  onDataError(err: any) {
     console.log('onDataError', err);
   }
 
@@ -54,9 +52,9 @@ export default class SimpleCtrl extends MetricsPanelCtrl {
   handleDataFrame(data: DataFrame[]) {
     const values: KeyValue[] = [];
 
-    for(const frame of data) {
-      for( let i=0; i<frame.fields.length; i++) {
-        values.push( {
+    for (const frame of data) {
+      for (let i = 0; i < frame.fields.length; i++) {
+        values.push({
           key: frame.fields[i].name,
           value: frame.rows[0][i],
         });
@@ -67,6 +65,4 @@ export default class SimpleCtrl extends MetricsPanelCtrl {
   }
 }
 
-export {
-  SimpleCtrl as PanelCtrl
-};
+export { SimpleCtrl as PanelCtrl };
