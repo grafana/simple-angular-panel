@@ -11,7 +11,7 @@ Install Module Dependencies
 
 ```BASH
 yarn
-```BASH
+```
 
 Build plugin in production mode
 ```BASH
