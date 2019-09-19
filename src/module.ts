@@ -56,7 +56,7 @@ export default class SimpleCtrl extends MetricsPanelCtrl {
       for (let i = 0; i < frame.fields.length; i++) {
         values.push({
           key: frame.fields[i].name,
-          value: frame.rows[0][i],
+          value: frame.fields[i].values,
         });
       }
     }
