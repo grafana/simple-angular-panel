@@ -1,6 +1,6 @@
 {
   "name": "simple-angular-panel",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple Angular Grafana",
   "scripts": {
     "build": "grafana-toolkit plugin:build",
@@ -11,9 +11,9 @@
   "author": "Grafana Labs",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@grafana/data": "next",
-    "@grafana/ui": "next",
-    "@grafana/toolkit": "next",
+    "@grafana/data": "latest",
+    "@grafana/ui": "latest",
+    "@grafana/toolkit": "latest",
     "@types/grafana": "github:CorpGlory/types-grafana.git"
   }
 }
