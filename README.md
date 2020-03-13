@@ -5,7 +5,7 @@ Hello world showing series in Grafana panel.
 
 ### Building this plugin
 
-This plugin leverages the grafana-toolkit to simplify building and packaging a plugin.
+This plugin use [@grafana/toolkit](https://www.npmjs.com/package/@grafana/toolkit) to simplify building and packaging a plugin.
 
 Install module dependencies:
 
