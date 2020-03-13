@@ -1,7 +1,7 @@
 {
   "type": "panel",
   "name": "Simple Angular",
-  "id": "simple-angular-panel",
+  "id": "grafana-simple-angular-panel",
 
   "info": {
     "description": "Simple Angular Panel",
