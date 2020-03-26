@@ -15,5 +15,11 @@
     "@grafana/ui": "next",
     "@grafana/toolkit": "next",
     "@types/grafana": "github:CorpGlory/types-grafana.git"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.9.0"
+  },
+  "engines": {
+    "node": ">=12 <13"
   }
 }
