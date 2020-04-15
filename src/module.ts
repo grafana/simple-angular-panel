@@ -1,7 +1,7 @@
 import { MetricsPanelCtrl } from 'grafana/app/plugins/sdk';
 import defaultsDeep from 'lodash/defaultsDeep';
 
-import { DataFrame } from '@grafana/data';
+import { DataFrame, PanelEvents } from '@grafana/data';
 
 interface KeyValue {
   key: string;
@@ -26,9 +26,9 @@ export default class SimpleCtrl extends MetricsPanelCtrl {
     // Get results directly as DataFrames
     (this as any).dataFormat = 'series';
 
-    this.events.on('init-edit-mode', this.onInitEditMode.bind(this));
-    this.events.on('render', this.onRender.bind(this));
-    this.events.on('data-error', this.onDataError.bind(this));
+    this.events.on(PanelEvents.editModeInitialized, this.onInitEditMode.bind(this));
+    this.events.on(PanelEvents.render, this.onRender.bind(this));
+    this.events.on(PanelEvents.dataError, this.onDataError.bind(this));
   }
 
   onInitEditMode() {
